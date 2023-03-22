@@ -84,7 +84,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      post: postData,
+      post: postData.slice(0, 50),
     },
   };
 };

@@ -1,5 +1,5 @@
-import Footer from "@/components/header/Footer";
-import Header from "@/components/header/header";
+import Footer from "../components/header/Footer";
+import Header from "../components/header/header";
 import Link from "next/link";
 
 export default function Home() {

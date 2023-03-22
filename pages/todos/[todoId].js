@@ -56,7 +56,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      todo: data,
+      todo: data.slice(0, 50),
     },
   };
 };
