@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const header = () => {
+const Header = () => {
   return (
     <header className="bg-slate-900">
       <nav className="flex justify-between items-center w-[95%] mw-[480px] m-auto py-8">
@@ -31,4 +31,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
