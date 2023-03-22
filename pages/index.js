@@ -1,12 +1,8 @@
-import Footer from "../components/header/Footer";
-import Header from "../components/header/header";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Header></Header>
-
       <div className="flex flex-wrap justify-center my-6">
         <div className="w-full sm:w-1/2 md:w-1/2 p-2">
           <Link href="/blog">
@@ -59,8 +55,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      <Footer></Footer>
     </>
   );
 }

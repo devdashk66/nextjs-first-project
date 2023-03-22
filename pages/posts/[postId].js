@@ -1,10 +1,7 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Image from "next/image";
 const PostId = ({ post }) => {
   return (
     <>
-      <Header></Header>
       <div className="my-6 w-[90%]  lg:w-3/4 xl:w-4/5 m-auto flex items-start flex-col lg:flex-row gap-4">
         <Image
           width={150}
@@ -48,8 +45,6 @@ const PostId = ({ post }) => {
           </p>
         </div>
       </div>
-
-      <Footer></Footer>
     </>
   );
 };
@@ -84,7 +79,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      post: postData.slice(0, 50),
+      post: postData,
     },
   };
 };

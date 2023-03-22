@@ -1,12 +1,8 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Link from "next/link";
 import Image from "next/image";
 const index = ({ todos }) => {
   return (
     <>
-      <Header></Header>
-
       <h1 className="w-[95%] m-auto text-center text-4xl my-8">
         ----- Todos -----
       </h1>
@@ -37,7 +33,6 @@ const index = ({ todos }) => {
           </div>
         </>
       ))}
-      <Footer></Footer>
     </>
   );
 };
@@ -49,7 +44,7 @@ export const getStaticProps = async () => {
   const data = await response.json();
   return {
     props: {
-      todos: data.slice(0, 50),
+      todos: data,
     },
   };
 };

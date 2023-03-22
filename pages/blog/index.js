@@ -1,11 +1,8 @@
 import Link from "next/link";
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Image from "next/image";
 const index = ({ blogs }) => {
   return (
     <>
-      <Header></Header>{" "}
       <h1 className="w-[95%] m-auto text-center text-4xl my-8">
         ----- Blog -----
       </h1>
@@ -37,7 +34,6 @@ const index = ({ blogs }) => {
           </div>
         </>
       ))}
-      <Footer></Footer>
     </>
   );
 };
@@ -50,7 +46,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      blogs: data.slice(0, 50),
+      blogs: data,
     },
   };
 };

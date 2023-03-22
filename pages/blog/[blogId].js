@@ -1,11 +1,8 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Image from "next/image";
 const BlogId = ({ blog }) => {
   console.log(blog);
   return (
     <>
-      <Header></Header>
       <div className="my-6 w-[90%]  lg:w-3/4 xl:w-4/5 m-auto flex items-start flex-col lg:flex-row gap-4">
         <Image
           width={200}
@@ -49,8 +46,6 @@ const BlogId = ({ blog }) => {
           </p>
         </div>
       </div>
-
-      <Footer></Footer>
     </>
   );
 };

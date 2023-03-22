@@ -1,13 +1,9 @@
-import Header from "@/components/header/Header";
-import Footer from "@/components/header/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
 const index = ({ users }) => {
   return (
     <>
-      <Header></Header>
-
       <h1 className="w-[95%] m-auto text-center text-4xl my-8">
         ----- User -----
       </h1>
@@ -38,7 +34,6 @@ const index = ({ users }) => {
           </div>
         </>
       ))}
-      <Footer></Footer>
     </>
   );
 };

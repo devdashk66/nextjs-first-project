@@ -1,13 +1,9 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
 const index = ({ posts }) => {
   return (
     <>
-      <Header></Header>
-
       <h1 className="w-[95%] m-auto text-center text-4xl my-8">
         ----- Post -----
       </h1>
@@ -40,7 +36,6 @@ const index = ({ posts }) => {
           </div>
         </>
       ))}
-      <Footer></Footer>
     </>
   );
 };
@@ -56,7 +51,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: postData.slice(0, 50),
+      posts: postData,
     },
   };
 }

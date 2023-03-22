@@ -1,11 +1,8 @@
-import Header from "../../components/header/Header";
-import Footer from "../../components/header/Footer";
 import Image from "next/image";
 
 const TodoId = ({ todo }) => {
   return (
     <>
-      <Header></Header>
       <div className="my-6 w-[90%] h-[75vh]  lg:w-3/4 xl:w-4/5 m-auto flex items-start  gap-4 ">
         <Image
           width={150}
@@ -22,8 +19,6 @@ const TodoId = ({ todo }) => {
           </p>
         </div>
       </div>
-
-      <Footer></Footer>
     </>
   );
 };
@@ -56,7 +51,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      todo: data.slice(0, 50),
+      todo: data,
     },
   };
 };
