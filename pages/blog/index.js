@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Header from "@/components/header/Header";
-import Footer from "@/components/header/Footer";
+import Header from "../../components/header/Header";
+import Footer from "../../components/header/Footer";
 import Image from "next/image";
 const index = ({ blogs }) => {
   return (

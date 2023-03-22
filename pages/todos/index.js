@@ -1,4 +1,5 @@
-import Header from "@/components/header/Header";
+import Header from "../../components/header/Header";
+import Footer from "../../components/header/Footer";
 import Link from "next/link";
 import Image from "next/image";
 const index = ({ todos }) => {
@@ -36,6 +37,7 @@ const index = ({ todos }) => {
           </div>
         </>
       ))}
+      <Footer></Footer>
     </>
   );
 };
